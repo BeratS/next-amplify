@@ -12,12 +12,12 @@ export async function GET(
   res: NextResponse<ResponseData>
 ) {
 
-  try {
-    const { rows } = await pool.query('SELECT * FROM messages');
-    res.status(200).json(rows);
-  } catch (error) {
-    res.status(500).json({ error: 'Database error' });
-  }
+  // try {
+  //   const { rows } = await pool.query('SELECT * FROM messages');
+  //   res.status(200).json(rows);
+  // } catch (error) {
+  //   res.status(500).json({ error: 'Database error' });
+  // }
 
   return NextResponse.json({ message: 'Hello from Next.js!' })
 }
