@@ -1,17 +1,18 @@
 {
-  "name": "amplify-nextjs-app",
+  "name": "amplify-next",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@aws-amplify/ui-react": "^6.7.0",
     "@hookform/resolvers": "^3.9.1",
-    "aws-amplify": "^6.9.0",
+    "aws-amplify": "^6.10.0",
+    "lodash": "^4.17.21",
     "next": "14.2.18",
     "pg": "^8.13.1",
     "pg-hstore": "^2.3.4",
@@ -22,12 +23,13 @@
   "devDependencies": {
     "@aws-amplify/backend": "^1.8.0",
     "@aws-amplify/backend-cli": "^1.4.2",
+    "@types/lodash": "^4.17.13",
     "@types/node": "^20",
     "@types/pg": "^8.11.10",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "aws-cdk": "^2.169.0",
-    "aws-cdk-lib": "^2.169.0",
+    "aws-cdk": "^2.171.0",
+    "aws-cdk-lib": "^2.171.0",
     "constructs": "^10.4.2",
     "esbuild": "^0.24.0",
     "eslint": "^8",
@@ -35,6 +37,6 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "tsx": "^4.19.2",
-    "typescript": "^5.6.3"
+    "typescript": "^5.7.2"
   }
 }
