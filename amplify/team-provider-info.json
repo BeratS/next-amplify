@@ -10,6 +10,29 @@
       "StackName": "amplify-nextamplify-dev-4a6ac",
       "StackId": "arn:aws:cloudformation:us-east-1:039612881893:stack/amplify-nextamplify-dev-4a6ac/d0addbd0-ad18-11ef-bfeb-12bb4e8cd5f1",
       "AmplifyAppId": "d33b4k7cuqjwx0"
+    },
+    "categories": {
+      "auth": {
+        "nextamplify8775d67d": {
+          "userPoolId": "us-east-1_GkodCD4pE",
+          "userPoolName": "amplifyAuthUserPool4BA7F805-swejr1h3UkEr",
+          "webClientId": "3le80f6ar8nv269g3q3s5u92iv",
+          "nativeClientId": "3le80f6ar8nv269g3q3s5u92iv",
+          "identityPoolId": "us-east-1:c6ba8121-1e3c-422b-a314-7046d15b0201",
+          "identityPoolName": "amplifyAuthIdentityPool3FDE84CC_emTFv1mONxK4",
+          "allowUnauthenticatedIdentities": true,
+          "authRoleArn": "arn:aws:iam::039612881893:role/amplify-dztys6caykb6e-mai-amplifyAuthauthenticatedU-wxp5nHHq4Fhv",
+          "authRoleName": "amplify-dztys6caykb6e-mai-amplifyAuthauthenticatedU-wxp5nHHq4Fhv",
+          "unauthRoleArn": "arn:aws:iam::039612881893:role/amplify-dztys6caykb6e-mai-amplifyAuthunauthenticate-h4JMPdOg28Dq",
+          "unauthRoleName": "amplify-dztys6caykb6e-mai-amplifyAuthunauthenticate-h4JMPdOg28Dq"
+        }
+      },
+      "storage": {
+        "nextamplify72c9738a": {
+          "bucketName": "amplify-dztys6caykb6e-mai-amplifynextdrivebucket04-eylvv2ydcgsu",
+          "region": "us-east-1"
+        }
+      }
     }
   }
 }

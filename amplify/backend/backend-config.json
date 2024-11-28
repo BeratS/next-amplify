@@ -1,1 +1,125 @@
-{}
+{
+  "auth": {
+    "nextamplify8775d67d": {
+      "customAuth": false,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "serviceType": "imported"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_auth_nextamplify8775d67d_allowUnauthenticatedIdentities": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "nextamplify8775d67d"
+        }
+      ]
+    },
+    "AMPLIFY_auth_nextamplify8775d67d_authRoleArn": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "nextamplify8775d67d"
+        }
+      ]
+    },
+    "AMPLIFY_auth_nextamplify8775d67d_authRoleName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "nextamplify8775d67d"
+        }
+      ]
+    },
+    "AMPLIFY_auth_nextamplify8775d67d_identityPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "nextamplify8775d67d"
+        }
+      ]
+    },
+    "AMPLIFY_auth_nextamplify8775d67d_identityPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "nextamplify8775d67d"
+        }
+      ]
+    },
+    "AMPLIFY_auth_nextamplify8775d67d_nativeClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "nextamplify8775d67d"
+        }
+      ]
+    },
+    "AMPLIFY_auth_nextamplify8775d67d_unauthRoleArn": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "nextamplify8775d67d"
+        }
+      ]
+    },
+    "AMPLIFY_auth_nextamplify8775d67d_unauthRoleName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "nextamplify8775d67d"
+        }
+      ]
+    },
+    "AMPLIFY_auth_nextamplify8775d67d_userPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "nextamplify8775d67d"
+        }
+      ]
+    },
+    "AMPLIFY_auth_nextamplify8775d67d_userPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "nextamplify8775d67d"
+        }
+      ]
+    },
+    "AMPLIFY_auth_nextamplify8775d67d_webClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "nextamplify8775d67d"
+        }
+      ]
+    },
+    "AMPLIFY_storage_nextamplify72c9738a_bucketName": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "nextamplify72c9738a"
+        }
+      ]
+    },
+    "AMPLIFY_storage_nextamplify72c9738a_region": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "nextamplify72c9738a"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "nextamplify72c9738a": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3",
+      "serviceType": "imported"
+    }
+  }
+}
