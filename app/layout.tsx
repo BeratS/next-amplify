@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import AppProviders from "./AppProviders";
 
+import "@aws-amplify/ui-react/styles.css";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
