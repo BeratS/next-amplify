@@ -1,3 +1,4 @@
+import ImageUpload from "../components/partials/ImageUpload";
 import Todo from "../components/partials/Todo";
 
 export default function Page() {
@@ -5,6 +6,7 @@ export default function Page() {
     <main>
       <h1>My todos</h1>
       <Todo />
+      <ImageUpload />
       <div>
         🥳 App successfully hosted. Try creating a new todo.
         <br />
