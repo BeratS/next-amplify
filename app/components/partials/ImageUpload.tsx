@@ -8,6 +8,7 @@ const ImageUpload = () => {
     <FileUploader
       acceptedFileTypes={['image/*']}
       path="public/"
+      // path={({ identityId }) => `public/${identityId}/`}
       maxFileCount={1}
       isResumable
     />
