@@ -2,9 +2,18 @@
 
 import { list } from 'aws-amplify/storage';
 import { FileUploader, StorageImage  } from '@aws-amplify/ui-react-storage';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+
+interface ItemImage {
+    path: string;
+    size?: number;
+    lastModified?: Date | string;
+    eTag?: string;
+}
 
 const ImageUpload = () => {
+
+  const [items, setItems] = useState<ItemImage[]>([]);
   
   const fetchUploads = async () => {
     const result = await list({
@@ -13,6 +22,8 @@ const ImageUpload = () => {
     });
 
     console.log(result);
+    
+    setItems(result.items || []);
   }
 
   useEffect(() => {
@@ -39,7 +50,15 @@ const ImageUpload = () => {
         onUploadError={onError}
       />
       
-      {/* <StorageImage alt="cat" path="public/cat.jpg" />; */}
+      <div className="list flex flex-wrap gap-4 py-4">
+        {items.map((item, index) =>
+          <StorageImage key={index}
+            maxWidth={400}
+            alt={`${index}`}
+            path={item.path} />
+        )}
+      </div>
+      {/*  */}
     </>
   );
 };
