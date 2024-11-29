@@ -8,7 +8,7 @@ const ImageUpload = () => {
   
   const fetchUploads = async () => {
     const result = await list({
-      path: 'public',
+      path: 'public/',
       // Alternatively, path: ({identityId}) => `album/{identityId}/photos/`
     });
 
