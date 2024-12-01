@@ -1,5 +1,7 @@
 'use client'
 
+import dynamic from 'next/dynamic';
+
 import { PhylloConnect } from 'phyllo-connect';
 import { useEffect } from 'react';
 
@@ -20,4 +22,6 @@ const PhylloWidget:  React.FC<{ token: string}> = ({ token }) => {
   return null;
 };
 
-export default PhylloWidget
+export default dynamic(() => Promise.resolve(PhylloWidget), {
+  ssr: false
+})
