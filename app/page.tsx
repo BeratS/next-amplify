@@ -1,4 +1,4 @@
-import User from "./components/partials/User";
+import User from "../components/partials/User";
 
 export default function Home() {
   return (

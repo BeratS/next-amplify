@@ -1,5 +1,5 @@
-import ImageUpload from "../components/partials/ImageUpload";
-import Todo from "../components/partials/Todo";
+import ImageUpload from "../../components/partials/ImageUpload";
+import Todo from "../../components/partials/Todo";
 
 export default function Page() {
   return (
