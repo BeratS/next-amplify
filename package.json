@@ -30,7 +30,6 @@
     "next": "14.2.18",
     "pg": "^8.13.1",
     "pg-hstore": "^2.3.4",
-    "phyllo-connect": "^0.0.1",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.53.2",

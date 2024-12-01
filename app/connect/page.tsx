@@ -1,5 +1,5 @@
 import PhylloWidget from '../../components/widgets/ConnectPhyllo';
-import { getToken } from '../../services/requets';
+import { getToken } from './actions';
 
 export default async function ConnectPage() {
   const token = await getToken(); // Server Action
